@@ -1,0 +1,49 @@
+<section class="hero">
+  <h1>Hello, I am Garrett Sueing!</h1>
+
+  <p class="intro">
+    I am a computer science major in my senior year. I am taking Intro to software 3081, after already completeing 4081. I am also in Operation Systems, Intro to Artificial Intelligence, and Algorithms.
+  </p>
+
+  <section class="contact-info">
+    <h2>Contact</h2>
+    <ul>
+      <li>Email: gqsueing@memphis.edu</li>
+      <li>Phone: (000) 867-5309</li>
+      <li>Location: Memphis, TN</li>
+    </ul>
+  </section>
+
+  <section class="social-links">
+    <h2>Find me online</h2>
+    <ul>
+      <li><a href="https://www.linkedin.com/in/garrett-sueing-92136a1b9/" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://github.com/ManlyMachamp" target="_blank" rel="noopener">GitHub</a></li>
+    </ul>
+  </section>
+</section>
+
+<html>
+  <head>
+    <title>Developer Portfolio</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <nav class="nav-bar">
+        <%= link_to "Home", root_path, class: "nav-link" %>
+        <%= link_to "About", about_path, class: "nav-link" %>
+        <%= link_to "Work",  work_path,  class: "nav-link" %>
+      </nav>
+    </header>
+
+    <main class="container">
+      <%= yield %>
+    </main>
+
+  </body>
+</html>
